@@ -1,0 +1,35 @@
+<?php $this->headTitle()->append('Contact'); ?>
+<?php $this->headMeta()->appendName('keywords', 'contacts'); ?>
+
+<section class="left">
+	<h1>Où suis-je sur internet ?</h1>
+	
+	<p>Vous pouvez me retrouver sur les principaux réseaux professionnels tels que 
+	<a href="https://www.linkedin.com/in/quentin-bonaventure-161a641a" class="linkedin"><em>LinkedIn</em></a>, 
+	<a href="http://www.viadeo.com/profile/0021y52ssxck4usr" class="viadeo"><em>Viadeo</em></a> ou encore 
+	<a href=""><em>Breaz</em></a>.</p>
+	
+	<p>Je suis également présent sur les sites informatiques 
+	<a href="http://stackoverflow.com/users/4593653/quentin-bonaventure"><em>Stack Exchange</em></a> ou bien
+	<a href="http://www.developpez.net/forums/u276309/shirraz/"><em>Développez.net</em></a>.</p>
+	
+	
+	<h1>Pour me joindre directement !</h1>
+	
+	<p>M'envoyer un mail ? <em>quentin@bonaventure.xyz</em> ! Un coup de téléphone ? <em>06.65.90.88.23</em> !
+	Un message direct ? Le formulaire ci-dessous est là pour vous !</p>
+</section>
+
+
+<section id="message-form" class="right">
+	<?php 
+    	$form->setAttribute('action', $this->url('contact'));
+    	$form->prepare(); ?>
+	<?= $this->form()->openTag($form); ?>
+	<?= $this->formRow($form->get('email')) ?>
+	<?= $this->formRow($form->get('subject')) ?>
+	<?= $this->formRow($form->get('message')) ?>
+	<?= $this->formSubmit($form->get('submit')) ?>
+	<?= $this->formElementerrors($form) ?>
+	<?= $this->form()->closeTag($form); ?>
+</section>

@@ -1,0 +1,147 @@
+article#post-read {
+	width: 66%;
+	padding: 2%;
+	float: left;
+}
+
+
+article#post-read header {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+
+article#post-read header h1 {
+	font-size: 20px;
+}
+
+
+article#post-read header .date,
+article#post-read header .category a {
+	color: grey;
+	margin: 4px;
+}
+
+code {
+    background-color: rgba(20, 20, 20, 0.15);
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+code > span {
+	display: inline;
+}
+
+
+div#post-read-right {
+	float: right;
+	width: 26%;
+	padding: 2%;
+}
+
+div#post-read-right > section {
+	margin-bottom: 25px;
+}
+
+
+#post-read section#closest-posts {
+	text-align: center;
+}
+
+
+#post-read #closest-posts div {
+	width: 150px;
+}
+
+
+#post-read #closest-posts .following-post {
+	float: left;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+#post-read #closest-posts .preceding-post {
+	float: right;
+	margin: 0 auto;
+	text-align: right;
+}
+
+
+#post-read #closest-posts a {
+	font-size: 14px;
+}
+
+
+
+form#create-post {
+	margin: 10px 20px;
+}
+
+
+form#create-post > div {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+form#create-post legend:after,
+form#create-post label:after {
+	content: " :";
+}
+
+form#create-post label,
+form#create-post legend {
+	float: left;
+	width: 9%;
+	text-align: right;
+}
+
+div#keywords-fieldset fieldset fieldset {
+	float: left;
+	width: 15%;
+	margin: 0 1%;
+}
+
+form#create-post input,
+form#create-post text,
+form#create-post textarea,
+form#create-post select {
+	width: 90%;
+	float: right;
+} 
+
+form#create-post textarea {
+	resize: none;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+div#post-preview {
+	background-color: rgba(100, 100, 100, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+
+#post-preview > article {
+	margin: 0 auto;
+	float: none;
+	min-width: 600px;
+	width: 60%;
+	height: 85%;
+	overflow-y: scroll;
+	background-color: #FFFFFF;
+	padding: 20px;
+}

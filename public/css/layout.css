@@ -1,0 +1,233 @@
+hr {
+	margin: 20px 10px;
+}
+
+html {
+	background-color: #0a5557;
+	background: url('../css/taipei3.png') no-repeat center bottom -20px, #0a5557 radial-gradient(ellipse at top center, #337e80 0%, #0a5557 70%) no-repeat scroll 0 0;
+	/* background-color: #87CEEB; */
+/* 	background-color: #337e80;
+    background-image: url("../css/taipei3.png");
+    background-position: center bottom -20px;
+    background-repeat: no-repeat; */
+/*	height: 100%;
+	min-height: 100%; */
+}
+
+
+header#layout-header {
+	height: 45px;
+	background-image: url('../css/hr.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 52% 10px;
+	background-color: #fcfbfc;
+	box-shadow: 0 0 20px #484848;
+	border-bottom: 1px solid lightgrey;
+	position: fixed;
+	max-width: 1000px;
+	min-width: 700px;
+	width: 80%;
+	z-index: 100;
+	top: 0;
+	overflow: hidden;
+}
+
+body {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1000px;
+	min-width: 700px;
+}
+
+footer#layout-footer {
+	height: 45px;
+/*	background-image: url('../css/hr.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 80% 10px; */
+	clear: both;
+	padding: 5px 10px;
+}
+
+footer#layout-footer p {
+	background: none;
+	box-shadow: none;
+	color: #FFFFFF;
+	text-shadow: 0 0 5px aqua;
+	text-align: right;
+}
+
+#name-title {
+	position: absolute;
+	display: inline;
+	font-size: 31px;
+	font-weight: bold;
+	font-family: cambria;
+	background-image: url("../css/banner3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* padding: 0 6px; */
+	margin: 7px 20px 0;
+	width: 330px;
+	line-height: 0.9;
+}
+
+#name-title a {
+	opacity: 0;
+}
+
+#main-navbar {
+	float: right;
+	font-size: 18px;
+	margin-right: 10px;
+	box-shadow: 0 0 9px rgba(125, 125, 125, 0.4)
+}
+
+#main-navbar li {
+	float: left;
+	border-left: 1px solid lightgrey;
+	display: flex;
+	overflow: hidden;
+}
+
+#main-navbar ul li:last-child {
+	border-right: 1px solid lightgrey;
+}
+
+#main-navbar li a {
+	box-shadow: 0 0 10px grey inset;
+	margin: 0 -10px;
+	padding: 14px 20px 15px;
+	width: 100%;
+	color: #8e5c33;	
+}
+
+/* #main-navbar li:hover {
+	box-shadow: 0 0 10px lightgrey inset;
+} */
+
+#main-navbar li:hover a {
+	text-shadow: 0 0 2px rgba(142, 92, 51, 0.4);
+	
+}
+
+#main-navbar li:hover a:active {
+	box-shadow: 0 0 15px grey inset;
+	box-shadow: 0 0 12px grey inset;
+}
+
+#content {
+	width: 100%;
+	clear: both;
+	min-height: 80%;
+	background-color: #fcfbfc;
+    background-image: url("../css/taipei3.png");
+    background-position: center bottom -75px;
+    background-repeat: no-repeat;
+	box-shadow: 0 0 10px #202020;
+	margin-top: 65px;
+	overflow: hidden; 
+}
+
+
+
+#content > footer {
+	text-align: center;
+}
+
+
+
+p {
+	text-align: justify;
+	padding: 8px;
+	margin: 10px 0;
+    margin-top: .5em;
+	background-color: rgba(251, 252, 251, 0.2);
+/* 	box-shadow: 0 0 10px 5px #fbfcfb; */
+}
+
+p, li {
+    font-size: 14px;
+	text-shadow: 0 0 4px white;
+	color: #666;
+	margin: 4px 0;
+}
+
+p, span, li {
+	font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+
+nav li {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+#main-navbar a {
+	font-family:Georgia,serif;
+	color:#4E443C;
+	font-variant: small-caps; text-transform: none; font-weight: 100; margin-bottom: 0;
+}
+
+em {
+	color: #005b82;
+	font-style: inherit;
+	font-weight: bold;
+}
+
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+
+
+@media only screen and (max-width: 740px) {
+	main#content {
+		background-color: transparent;
+		box-shadow: unset;
+	}
+	
+	header#layout-header {
+		width: 100%;
+		min-width: unset;
+		max-width: unset;
+	}
+
+	footer#layout-footer p {
+		font-size: 1.2em;
+	}
+
+	#main-navbar a {
+		font-size: 1em;
+	}
+	
+	p {
+	font-size: 1.6em;
+	text-align: unset;
+	}
+	
+	body {
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 740px) and (orientation: portrait) {
+	
+	header#layout-header {
+		background-size: 60px 10px;
+	}
+	
+	h1#name-title {
+		background-image: url("../css/banner3-small.png");
+		font-size: 14px;
+		width: 45px;
+		margin: 7px 7px 0;
+	}
+}

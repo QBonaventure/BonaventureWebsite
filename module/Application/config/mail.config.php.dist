@@ -1,0 +1,11 @@
+<?php
+return array(
+    'host'              => '', // IMAP domain of the mail server
+    'port'				=> '', 
+    'connection_class'  => 'plain', // connection type, default is plain
+    'connection_config' => array(
+        'username' => '', // i.e. email address
+        'password' => '',
+        'ssl'	=> 'tls', // if activated
+    ),
+);

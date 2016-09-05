@@ -1,0 +1,10 @@
+<?php
+return array(
+	'cryptography' => array(
+		'key'	=> '',
+		'iv'	=> '',
+		'method'	=> 'aes-256-cbc',
+		'hashAlgo'	=> 'sha256',
+		'hashCost'	=> 10,
+	),
+);

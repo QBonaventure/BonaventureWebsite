@@ -1,0 +1,28 @@
+{
+    "name": "name",
+    "description": "Personnal website of Quentin Bonaventure",
+    "license": "BSD-3-Clause",
+    "preferred-install": "dev",
+
+    "keywords": [
+        "framework",
+        "zf2"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "~2.5",
+        "qbonaventure/Blog": "dev-master",
+        "qbonaventure/Inner-Cryptography": "dev-master"
+    },
+	"autoload": {
+		"psr-4": {"Blog\\": "vendor/qbonaventure/blog",
+				  "QBonaventure\\InnerCryptography\\": "vendor/qbonaventure/inner-cryptography/src/",
+				  "Inner\\Parser\\": "vendor/inner/inner-parser/src/",
+				  "Inner\\Strings\\": "vendor/inner/inner-strings/src/",
+				  "Inner\\View\\": "vendor/inner/inner-view/src/"}
+	},
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    }
+}

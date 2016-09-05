@@ -1,0 +1,9 @@
+<?php
+return array(
+	'db' => array(
+		'driver'   => 'Pdo_Pgsql',
+		'dsn'      => 'pgsql:dbname=;host=;port=',
+		'username' => '',
+		'password' => '',
+	),
+);

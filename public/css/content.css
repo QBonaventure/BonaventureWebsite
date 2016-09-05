@@ -1,0 +1,893 @@
+
+
+main > section.left,
+main > section.right {
+    margin: 1%;
+    padding: 1%;
+    width: 45%;
+}
+
+main > section.full-width {
+	margin: 1%;
+	padding: 1%;
+	clear: both;
+}
+
+main > section.left {
+	float: left;
+}
+
+main > section.right {
+	float: right;
+}
+
+main > section > h1 {
+	font-size: 16px;
+/*     background-image: url("../css/underline.png"); */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 189px auto;
+    font-size: 16px;
+/*     padding-bottom: 15px; */
+	text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 740px) {
+	main > section.left,
+	main > section.right,
+	main > section.full-width {
+		float: unset;
+		width: unset;
+		background-color: white;
+		text-shadow: unset;
+		margin: 15px 0;
+		box-shadow: 0 3px 7px black;
+	}
+	main > section:first-child {
+		margin-top: 0;
+	}
+}
+
+
+
+
+div.row {
+	border-bottom: 1px solid lightgrey;
+	text-align: center;
+	height: 43px;
+}
+ 
+.row[class^=not] {
+	display: hidden;
+}
+
+div.cell {
+	margin: 5px;
+	border-right: 1px dotted lightgrey;
+	padding: 0px 4px;
+	float: left;
+}
+
+div.category { 
+	width: 115px;
+}
+
+div.title {
+	width: 300px;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	text-align: left;
+	height: 16px;
+}
+
+
+
+div.status {
+	width: 70px;
+}
+
+div.controls > div {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************* INDEX ************************/
+
+
+main #social-networks {
+	text-align: center;
+}
+
+#social-networks a {
+    color: transparent;
+    display: inline-block;
+    height: 100px;
+    text-decoration: none;
+    width: 100px;
+}
+
+#social-networks .flex-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#social-networks a {
+	background-image: url("../img/networksSprite.png");
+	background-repeat: no-repeat;
+	margin: 10px auto;
+	background-color: rgba(255,255,255, 0.8);
+	border-radius: 10px;
+}
+
+#social-networks a#viadeo {
+	background-position: 0 -200px;
+}
+
+#social-networks a#stackoverflow {
+	background-position: 0 0;
+}
+
+#social-networks a#github {
+	background-position: 0 -100px
+}
+
+#social-networks a#linkedin {
+	background-position: 0 -300px
+}
+
+#social-networks a:hover {
+	box-shadow: inset 0 0 10px white, 0 0 5px rgba(0, 0, 0, 0.30);
+	background-color: rgba(255,255,255, 0.8);
+}
+
+
+
+
+
+section#services {
+/*     border-left: 3px dotted #337e80; */
+    border-right: 3px dotted #337e80;
+}
+
+
+
+@media only screen and (max-width: 740px) {
+	section#services {
+	/*     border-left: 3px dotted #337e80; */
+	    border-right: 0;
+	}
+}
+
+
+section#services section {
+	margin: 12px 0;
+	text-align: center;
+}
+
+section#services section h1:before {
+	content: "- ";
+}
+
+section#services section h1:after {
+	content: " -";
+}
+
+
+
+/***************************** CV ************************/
+
+
+
+
+
+/*.curriculum-vitae #links a {*/
+#links a {
+   /*  border: 3px dashed lightgrey; */
+    background-image: url("../css/links_buttons.png");
+    background-size: 290px auto;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    margin: 0 6%;
+    padding: 18px 19px 18px 12px;
+    display: inline-block;
+    width: 113px;
+    color: #6a6a6a;
+}
+
+#links a:hover {
+	color: #454545;
+}
+#links a.linkedin:hover {
+	border-color: #007bb5;
+	background-position: 1px -58px;
+}
+
+#links a.viadeo:hover {
+	border-color: #ec7500;
+	background-position: -145px 0px;
+}
+
+#links a.download-cv:hover {
+	border-color: #ec7500;
+	background-position: -145px -58px;
+}
+	
+
+#links {
+	padding: 10px 0;
+	text-align: center;
+}
+
+
+
+/* main.curriculum-vitae > section:not(#links) {
+	width: 46%;
+	padding: 2%;
+	position: relative;
+} */
+
+/* section#education,
+section#languages,
+section#experiences {
+	float: left;
+}
+
+section#it-skills {
+	float: right;
+} */
+
+main.curriculum-vitae > section > h1 {
+	font-size: 22px;
+}
+
+main.curriculum-vitae section > section {
+	position: relative;
+	margin: 35px 0;
+	clear: both;
+}
+
+section#education > section,
+section#experiences > section {
+	margin-left: 70px;
+	border-left: 4px solid #8e5c33;
+	padding-left: 5px;
+}
+
+section#education h1.date,
+section#experiences h1.date {
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+	left: -70px;
+	text-align: center;
+	line-height: 12px;
+	width: 60px;
+}
+
+
+section#it-skills section > h1 {
+	margin: 10px 20px 10px;
+	border-bottom: 1px solid lightgrey;
+	text-align: center;
+}
+
+section#it-skills section:not(:last-child),
+section#languages section:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+
+section#it-skills section:first-child > h1 {
+	margin: 10px 20px 10px;
+	border-bottom: 1px solid red;
+	text-align: center;
+}
+
+main.curriculum-vitae section section > h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+main.curriculum-vitae section#education a,
+main.curriculum-vitae section#education a:link,
+main.curriculum-vitae section#education a:visited,
+main.curriculum-vitae section#experiences a,
+main.curriculum-vitae section#experiences a:link,
+main.curriculum-vitae section#experiences a:visited {
+	text-decoration: underline;
+}
+
+main.curriculum-vitae p {
+	padding: 0;
+}
+
+main.curriculum-vitae p.tools,
+main.curriculum-vitae p.tools a {
+	color: #8e5c33;
+}
+
+
+p.institute {
+	margin: 8px;
+	color: grey;
+}
+
+meter {
+	width: 70%;
+	margin: 0 15%;
+}
+
+
+
+
+
+
+
+/*************************** Biography **************************/
+
+main.biography h2 {
+	clear: both;
+}
+
+main.biography img {
+	margin-top: -18px;
+}
+
+main.biography img#earth-drawing {
+	width: 350px;
+}
+
+main.biography img#taiwan-drawing {
+	width: 200px;
+}
+
+
+
+/********************** CONTACT ****************************/
+
+
+form {
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: center;
+	position: relative;
+}
+
+label {
+	font-family: "Helvetica Neue","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	color: #666;
+	font-size: 16px;
+	display: block;
+}
+
+textarea, input {
+	border: 1px solid #8e5c33;
+	width: 98%;
+	position: relative;
+}
+
+input#subject-input,
+textarea#message-input,
+input#email-input {
+	margin: 0;
+	width: 90%;
+	resize: none;
+	z-index: 15;
+	box-shadow: 1px 1px 2px grey, 1px 1px 10px rgba(142, 92, 51, 0.70) inset;
+}
+
+textarea#message-input {
+	padding: 8px;
+	height: 200px;
+}
+
+input#subject-input,
+input#email-input {
+    height: 19px;
+    padding: 3px 8px 5px;
+}
+
+
+form ul {
+    background-color: rgba(128, 53, 51, 0.5);
+    border-radius: 20px;
+    display: block;
+    left: 19px;
+    margin: -20px auto auto;
+    padding-left: 0;
+    padding-top: 45px;
+    text-align: center;
+    width: 85%;
+    overflow: hidden;
+}
+
+form ul li {
+    background-color: rgba(128, 53, 51, 0.5);
+	border-top: 1px solid lightgrey;
+	padding: 5px;
+	box-shadow: 0 -2px 10px -3px black;
+	color: lightyellow;
+}
+
+
+input#submitbutton {
+	border-radius: 20px;
+	height: 52px;
+	width: 60%;
+/* 	margin-top: -30px;
+	padding-top: 27px; */
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 1px 1px 2px grey;
+	z-index: 10;
+	position: absolute;
+	padding-top: 24px;
+	top: 228px;
+	left: 0;
+	right: 0;
+	margin: 80px auto auto;
+}
+
+input#submitbutton:hover {
+	color: #8e5c33;
+}
+
+
+input#submitbutton:active {
+	box-shadow:	1px 1px 10px rgba(142, 92, 51, 0.70) inset;
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+	/* background: linear-gradient(rgba(255,255, 255, 0.70), transparent); */
+}
+
+
+
+
+
+
+#slideshow {
+	width: 94%;
+	position: relative;
+	padding: 3%;
+	overflow: hidden;
+}
+
+#slideshow .slider-container {
+	border: 10px solid black;
+	width: 60%;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+#slideshow .slider {
+	width: 400%;
+	position: relative;
+}
+
+
+#slideshow figure {
+	margin: 0;
+	float: left;
+	position: relative;
+	width: 25%;
+	margin-bottom: -3px;
+}
+
+
+#slideshow img {
+	border-bottom: 10px dashed black;
+	border-top: 10px dashed black;
+	width: 100%;
+	position: relative;
+}
+
+#slideshow figcaption {
+	position:absolute;
+	left:0; right:0; bottom: 5px;
+	padding: 20px;
+	margin:0;
+	border-top: 1px solid rgb(225,225,225);
+	text-align: center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: "Helvetica Neue","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 12px;
+	background: #fff;
+	background: rgba(255,255,255,0.7);
+	color: #555;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+
+
+
+@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+@-webkit-keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+@-mozilla-keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+#slideshow .slider {
+	animation: slider 30s infinite;
+}
+
+@keyframes figcaptionner {
+	0%, 20%, 25%, 45%, 50%, 70%, 75%, 95%, 100% {
+		bottom: -40%;
+	}
+	4%, 16%, 29%, 41%, 54%, 66%, 79%, 91% {
+		bottom: 0px;
+	}
+}
+
+
+
+
+@keyframes swapper {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -25% }
+	50%, 70%		{ left: -50% }
+	75%, 95%		{ left: -75% }
+	0%, 20%, 25%, 45%, 50%, 70%, 75%, 95%, 100% { opacity: 0}
+	4%, 16%, 29%, 41%, 54%, 66%, 79%, 91% { opacity: 1}
+}
+
+
+/* @keyframes figcaptionner {
+	0%, 25%, 50%, 75%, 100% {
+		bottom: -40%;
+	}
+	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95% {
+		bottom: 0px;
+	}
+} */
+
+#slideshow figcaption {
+	animation: figcaptionner 30s infinite;
+}
+
+
+
+#slideshow .swapper-container {
+	float: right;
+	width: 33%;
+	padding: 3% 0 3% 3%;
+	overflow: hidden;
+	font-size: 2.6vw;
+	color: white;
+	text-align: center;
+}
+#slideshow .swapper-container > span {
+    color: #828282;	
+}
+
+#slideshow .swapper-container span {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+#slideshow .swapping-texts {
+	width: 400%;
+	overflow: hidden;
+	margin-top: 18px;
+}
+
+#slideshow .swapping-texts span {
+	margin: 0;
+	float: left;
+	position: relative;
+	width: 25%;
+	color: #c9c9c9;
+}
+
+#slideshow .swapping-texts span {
+	animation: swapper 30s infinite;
+}
+
+
+
+
+@media only screen and (max-width: 740px) {
+	#slideshow {
+		background-color: black;
+	}
+	
+	#slideshow .slider-container {
+		width: 100%;
+		position: relative;
+		background-color: white;
+		border: 0;
+	}
+	
+	#slideshow .swapper-container {
+		width: 100%;
+		position: relative;
+	}
+
+}
+
+
+
+
+
+/* 
+
+
+#slideshow {
+	position: relative;
+	width: 100%;
+	height: 310px;
+	padding: 15px;
+	margin: 0 auto 2em;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #FFF;
+	CSS3 effects
+	background: rgba(0, 0, 0, 0) linear-gradient(#303030, #848484 60%, #9f9f9f 81%, #a2a2a2) repeat scroll 0 0;
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
+	
+	padding: 0;
+}
+ 
+avanced box-shadow
+ * tutorial @
+ * http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow 
+
+#slideshow:before,
+#slideshow:after {
+	position: absolute;
+	bottom:16px;
+	z-index: -10;
+	width: 50%;
+	height: 20px;
+	content: " ";
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+#slideshow:before {
+	left:0;
+	transform: rotate(-4deg);
+}
+#slideshow:after {
+	right:0;
+	transform: rotate(4deg);
+}
+
+
+gestion des dimensions et débordement du conteneur
+#slideshow .container {
+	position:relative;
+	width: 640px;
+	width: 50%;
+	height: 310px;
+	overflow: hidden;
+}
+	
+on prévoit un petit espace gris pour la timeline
+#slideshow .container:after {
+	position:absolute;
+	bottom: 0; left:0;
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background: #999;
+}
+
+   le conteneur des slides
+   en largeur il fait 100% x le nombre de slides
+
+#slideshow .slider {
+	position: absolute;
+	left:0; top:1px;
+	width: 400%;
+	height: 310px;
+}
+
+annulation des marges sur figure
+#slideshow figure {
+	position:relative;
+	display:inline-block;
+	padding:0; margin:0;
+}
+petit effet de vignette sur les images
+#slideshow figure:after {
+	position: absolute;
+	display:block;
+	content: " ";
+	top:0; left:0;
+	width: 100%; height: 100%;
+	box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
+}
+
+
+
+styles de nos légendes
+#slideshow figcaption {
+	position:absolute;
+	left:0; right:0; bottom: 5px;
+	padding: 20px;
+	margin:0;
+	border-top: 1px solid rgb(225,225,225);
+	text-align:center;
+	letter-spacing: 0.05em;
+	word-spacing: 0.05em;
+	font-family: "Helvetica Neue","Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 12px;
+	background: #fff;
+	background: rgba(255,255,255,0.7);
+	color: #555;
+	text-shadow: -1px -1px 0 rgba(255,255,255,0.3);
+}
+
+
+fonction d'animation, n'oubliez pas de prefixer !
+@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+@-webkit-keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+@-mozilla-keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}
+
+
+#slideshow .slider {
+	... avec la propriété animation
+	animation: slider 32s infinite;
+}
+
+#timeline {
+	position: absolute;
+	background: #999;
+	bottom: 15px;
+	left: 15px;
+	height: 3px;
+	background: rgb(214,98,13);
+	background: rgba(214,98,13,.8);
+	width: 0;
+	fonction d'animation
+	animation: timeliner 32s infinite;
+}
+
+@keyframes timeliner {
+	0%, 25%, 50%, 75%, 100%	{ width: 0;		}
+	20%, 45%, 70%, 90%		{ width: 640px;	}
+}
+
+
+@keyframes figcaptionner {
+	0%, 25%, 50%, 75%, 100%						{ bottom: -55px;	}
+	5%, 20%, 30%, 45%, 55%, 70%, 80%, 95%		{ bottom: 5px;		}
+}
+
+#slideshow figcaption {
+	... la propriété animation
+	animation: figcaptionner 32s infinite;
+}
+
+
+.play_commands {
+	positionnement en haut à droite 
+	position: absolute;
+	top: 25px; right: 25px;
+	z-index: 10;
+	dimensionnement des icônes
+	width: 22px;
+	height: 22px;
+	text-indent: -9999px;
+	border:0 none;
+	placez l'opacité à 1 si vous souhaitez voir les commandes
+	opacity: 0;
+	préparation de transition sur opacicty et right
+	transition: opacity 1s, right 1s;
+}
+on décale play légèrement sur la gauche
+.play { right: 55px; cursor: default; }
+ 
+création de l'icône pause avec 2 pseudos éléments
+.pause:after,
+.pause:before {
+	position: absolute;
+	display: block;
+	content: " ";
+	top:0;
+	width:38%;
+	height: 22px;
+	background: #fff;
+	background: rgba(255,255,255,0.5);
+}
+.pause:after { right:0; }
+.pause:before {	left:0; }
+ 
+création de l'icône play avec des bordures
+.play {
+	width: 1px; 
+	height: 1px; 
+	les transparentes forment la flèche
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 20px solid #fff; 
+	border-left: 20px solid rgba(255,255,255,0.5); 
+	renseignez 1 pour voir l'icône de suite
+	opacity: 0;
+}
+ 
+apparition du bouton pause au survole
+apparition des boutons au focus
+#slideshow:hover .pause,
+.play_commands:focus {
+	opacity: 1;
+	outline: none;
+}
+
+stopper les animation
+.sl_command:target ~ #slideshow .slider,
+.sl_command:target ~ #slideshow figcaption,
+.sl_command:target ~ #slideshow #timeline,
+.sl_command:target ~ #slideshow .dots_commands li:first-child a:after {
+	animation-play-state: paused;
+}
+ 
+redémarrer les animations
+#sl_play:target ~ #slideshow .slider,
+#sl_play:target ~ #slideshow figcaption,
+#sl_play:target ~ #slideshow #timeline,
+#sl_play:target ~ #slideshow .dots_commands li:first-child a:after {
+	animation-play-state: running;
+}
+ 
+switch entre les boutons
+.sl_command:target ~ #slideshow .pause 		{ opacity:0; }
+#sl_play:target ~ #slideshow:hover .pause,
+#sl_play:target ~ #slideshow .pause:focus 	{ opacity:1; }
+.sl_command:target ~ #slideshow .play 		{ opacity:1; right: 25px; cursor: pointer; }
+#sl_play:target ~ #slideshow .play 			{ opacity:0; right: 55px; cursor: default; }
+
+
+ */

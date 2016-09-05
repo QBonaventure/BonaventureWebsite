@@ -1,0 +1,59 @@
+<?php $routeName = $this->getHelperPluginManager()->getServiceLocator()->get('Application')
+               ->getMvcEvent()->getRouteMatch()->getMatchedRouteName();
+$keywords	= 'def'; ?>
+
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="fr">
+	<head>
+        <meta charset="utf-8"></meta>
+        <?= $this->headTitle()->setSeparator(' - ')->setAutoEscape(false)->prepend('Quentin Bonaventure') ?>
+
+        <?= $this->headMeta()
+//         	->appendName('keywords', '')
+            ->appendName('viewport', 'width=device-width, maximum-scale=1, initial-scale=1.0, user-scalable=yes')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?= $this
+        ->headLink(
+            //array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico')
+            )
+//                         ->prependStylesheet($this->basePath('css/style.css'))
+//                         ->prependStylesheet($this->basePath('css/bootstrap-theme.min.css'))
+                        ->prependStylesheet($this->basePath('css/content.css'))
+                        ->prependStylesheet($this->basePath('css/layout.css'))
+                        ->prependStylesheet($this->basePath('css/reset.css')) ?>
+
+        <!-- Scripts -->
+        <?= $this->headScript()
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+            ->prependFile($this->basePath('js/jquery.min.js'))
+            ->prependFile($this->basePath('js/respond.min.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath('js/html5shiv.min.js'),   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+	</head><!--
+	
+	--><body>
+		<header id="layout-header">
+			<h1 id="name-title"><a href="<?php echo $this->url('home') ?>">Quentin Bonaventure</a></h1>
+	        <nav id="main-navbar" role="navigation">
+	            <ul>
+					<li><a href="<?= $this->url('home') ?>"><?= $this->translate('Accueil') ?></a></li>
+	            	<li><a href="<?= $this->url('blog') ?>"><?= $this->translate('Blog') ?></a></li>
+					<li><a href="<?= $this->url('curriculum-vitae') ?>"><?= $this->translate('CV') ?></a></li>
+
+					<li><a href="<?= $this->url('contact') ?>"><?= $this->translate('Contacts') ?></a></li>
+	            </ul>
+	        </nav>
+	    </header><!--
+        --><main id="content" role="main" class="<?= $routeName ?>">
+        <!-- <main class="" id="content" role="main"> -->
+            <?php echo $this->content; ?>
+        </main>
+        <footer id="layout-footer">
+        	<p>&copy; <?php echo date('Y') ?> par Bonaventure Quentin. SIRET : 818 583 627 00018</p>
+        </footer>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
